@@ -90,5 +90,5 @@ This project is licensed under the MIT license.
 
 ## Questions
 
-- If you have any questions, please feel free to contact me at [your.email@example.com](mailto:your.email@example.com).
-- You can also find more of my work at [YourGitHubUsername](https://github.com/yourusername).
+- If you have any questions, please feel free to contact me at [jacquilyn.fletcher89@gmail.com](mailto:jacquilyn.fletcher89@gmail.com).
+- You can also find more of my work at [Jacquilyn-F](https://github.com/Jacquilyn-F).
