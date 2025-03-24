@@ -1,63 +1,94 @@
 # Candidate Search
 
-Candidate Search is a React-based application that allows users to search for GitHub users, view their profiles, and save or reject candidates for further review.
+## Project Overview
+
+This project implements a candidate search application that interacts with the GitHub API to retrieve and display candidate information. The application allows users to view candidate profiles, save potential candidates to a list, and manage the saved candidates. The app is built using TypeScript and deployed on Render.
 
 ## Features
 
-- Search for GitHub users using the GitHub API.
-- View detailed profiles of candidates, including their name, location, email, company, and bio.
-- Save candidates for later review or reject them.
-- View saved candidates on a dedicated page.
+- **GitHub API Integration**: The app fetches candidate data from the GitHub API, including the candidate’s name, username, location, avatar, email, HTML URL, and company.
+- **Save Potential Candidates**: Users can save candidates by clicking the "+" button, which adds the candidate to a list of potential candidates.
+- **Reject Candidates**: Users can skip candidates by clicking the "-" button, which moves to the next candidate without saving the current one.
+- **Persistent Saved Candidates List**: The list of saved candidates persists even after the page reloads using local storage.
+- **Candidate Information**: For each candidate, the following information is displayed:
+  - Name
+  - Username
+  - Location
+  - Avatar
+  - Email
+  - HTML URL
+  - Company
+- **Empty State Handling**: Appropriate messages are shown when there are no candidates to review or when there are no saved candidates.
 
-## Setup Instructions
+## Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd candidate_search
-   ```
+To run this project locally, follow the steps below:
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+### Prerequisites
 
-3. Start the development server:
-   ```bash
-   npm start
-   ```
+Ensure you have the following installed:
 
-4. Open the application in your browser at `http://localhost:3000`.
+- **Node.js**: The runtime for the application.
+- **GitHub Personal Access Token**: Create a GitHub personal access token to increase the API rate limit. Follow the [instructions on creating a GitHub Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) with default permissions for public repositories.
 
-## Usage
+### Steps to Run Locally
 
-1. Navigate to the **Candidate Search** page to browse GitHub users.
-2. Use the **Add** or **Reject** buttons to save or reject candidates.
-3. View saved candidates on the **Saved Candidates** page.
+1. **Clone the Repository**:
 
-## File Overview
+    ```bash
+    git clone https://github.com/yourusername/candidate-search.git
+    cd candidate-search
+    ```
 
-- **`src/components/CandidateCard.tsx`**: Displays detailed information about a candidate and allows users to save or reject them.
-- **`src/components/SavedCandidate.tsx`**: Displays a saved candidate in a table format with an option to reject them.
-- **`src/pages/CandidateSearch.tsx`**: Handles the search functionality and displays candidates using the `CandidateCard` component.
-- **`src/pages/SavedCandidatesPage.tsx`**: Displays all saved candidates in a table format using the `SavedCandidate` component.
+2. **Set Up Environment Variables**:
 
-## API Integration
+    Create a `.env` file in the root directory and add your GitHub personal access token:
 
-This application uses the following GitHub API endpoints:
-- **Search Users**: Fetches a list of GitHub users.
-- **User Details**: Fetches detailed information about a specific GitHub user.
+    ```bash
+    VITE_GITHUB_TOKEN=your_github_personal_access_token
+    ```
 
-## Local Storage
+    You can use the included `.env.EXAMPLE` file as a reference.
 
-Saved candidates are stored in the browser's `localStorage` under the key `savedCandidates`.
+3. **Install Dependencies**:
 
-## Future Enhancements
+    Install the necessary dependencies for both frontend and backend:
 
-- Add pagination for large search results.
-- Implement a search bar for filtering saved candidates.
-- Improve UI/UX with additional styling and animations.
+    ```bash
+    npm install
+    ```
+
+4. **Run the Application Locally**:
+
+    Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+5. **Access the Application**:
+
+    Visit `http://localhost:5173` in your browser to view the application.
+
+## Deployment
+
+The application is deployed on Render and can be accessed at the following live URL:
+
+- [Live Application](https://candidate-search-f3tb.onrender.com)  
+- [GitHub Repository](https://github.com/Jacquilyn-F/candidate_search)
+
+## Technologies Used
+
+- **Frontend**: React, TypeScript, JSX, CSS
+- **API Integration**: GitHub REST API
+- **Local Storage**: For persisting saved candidates
+- **Deployment**: Render
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT license.
+
+## Questions
+
+- If you have any questions, please feel free to contact me at [your.email@example.com](mailto:your.email@example.com).
+- You can also find more of my work at [YourGitHubUsername](https://github.com/yourusername).
