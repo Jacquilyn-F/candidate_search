@@ -39,18 +39,7 @@ Ensure you have the following installed:
     git clone https://github.com/yourusername/candidate-search.git
     cd candidate-search
     ```
-
-2. **Set Up Environment Variables**:
-
-    Create a `.env` file in the root directory and add your GitHub personal access token:
-
-    ```bash
-    VITE_GITHUB_TOKEN=your_github_personal_access_token
-    ```
-
-    You can use the included `.env.EXAMPLE` file as a reference.
-
-3. **Install Dependencies**:
+2. **Install Dependencies**:
 
     Install the necessary dependencies for both frontend and backend:
 
@@ -58,7 +47,7 @@ Ensure you have the following installed:
     npm install
     ```
 
-4. **Run the Application Locally**:
+3. **Run the Application Locally**:
 
     Start the development server:
 
@@ -66,7 +55,7 @@ Ensure you have the following installed:
     npm run dev
     ```
 
-5. **Access the Application**:
+4. **Access the Application**:
 
     Visit `http://localhost:5173` in your browser to view the application.
 
