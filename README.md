@@ -64,7 +64,7 @@ Ensure you have the following installed:
 
 The application is deployed on Render and can be accessed at the following live URL:
 
-- [Live Application](https://candidate-search-f3tb.onrender.com)  
+- [Live Application](https://candidate-search-1-jksg.onrender.com)  
 - [GitHub Repository](https://github.com/Jacquilyn-F/candidate_search)
 
 ## Technologies Used
